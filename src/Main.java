@@ -7,6 +7,16 @@ public class Main {
         System.out.println("Циклы урок 2");
 
         System.out.println("Задание 1");
+        int amountPurpose = 2459000;
+        int monthAmount = 15000;
+        int month = 1;
+        double monthlyPercent = 0.01;
+        float total = 0;
 
+        while (total <= amountPurpose) {
+            total += monthAmount + total * monthlyPercent;
+            System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей%n", month, total);
+            month++;
+        }
     }
 }
